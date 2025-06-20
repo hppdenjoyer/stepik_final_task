@@ -7,15 +7,18 @@ class MainPageLocators():
 
 class LoginPageLocators():
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
-    LOGIN_EMAIL = (By.CSS_SELECTOR, "#id_login-username")
-    LOGIN_PASSWORD = (By.CSS_SELECTOR, "#id_login-password")
-    LOGIN_BTN = (By.CSS_SELECTOR, "button[value='Log In']")
-
     REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
-    REGISTER_EMAIL = (By.CSS_SELECTOR, "#id_registration-email")
-    REGISTER_PASSWORD_1 = (By.CSS_SELECTOR, "#id_registration-password1")
-    REGISTER_PASSWORD_2 = (By.CSS_SELECTOR, "#id_registration-password2")
-    REGISTER_BTN = (By.CSS_SELECTOR, "button[value='Register']")
+
+
+class ProductPageLocators():
+    PRODUCT_TITLE = (By.CSS_SELECTOR, ".product_main h1")
+    PRODUCT_PRICE = (By.CSS_SELECTOR, "p.price_color")
+    ADD_TO_BASKET_BTN = (By.CSS_SELECTOR, "button.btn-add-to-basket")
+    SUCCESS_MSG = (By.CSS_SELECTOR, ".alert-success:first-child")
+    SUCCESS_PRODUCT_TITLE = (By.CSS_SELECTOR, ".alert-success:first-child strong")
+    BASKET_INFO_MSG = (By.CSS_SELECTOR, ".alert-info")
+    BASKET_PRICE = (By.CSS_SELECTOR, ".alert-info strong")
+
 
 
 

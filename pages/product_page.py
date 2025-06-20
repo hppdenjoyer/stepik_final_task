@@ -5,14 +5,26 @@ from .locators import ProductPageLocators
 class ProductPage(BasePage):
    
     def add_product_to_basket(self):
+        self.click_add_to_basket_button()
+        self.solve_quiz_and_get_code()
+        self.should_be_success_message()
+        self.is_success_product_title_correct()
+        self.should_be_basket_price_message()
+        self.is_basket_price_correct()
+
+    def click_add_to_basket_button(self):
         assert self.click_on_button(*ProductPageLocators.ADD_TO_BASKET_BTN), \
             "Add to basket button is not present"
 
-    def should_be_product_added_to_basket_message(self):
+    def should_be_success_message(self):
         assert self.is_element_present(*ProductPageLocators.SUCCESS_MSG), \
             "Success message is not present"
 
-    def is_product_added_to_basket_product_title_correct(self):
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Success message is presented, but should not be"
+
+    def is_success_product_title_correct(self):
         product_title = self.browser.find_element(
             *ProductPageLocators.PRODUCT_TITLE
         ).text
@@ -22,7 +34,7 @@ class ProductPage(BasePage):
         assert success_product_title == product_title, \
             "Success product title is not correct"
 
-    def should_be_basket_price_info_message(self):
+    def should_be_basket_price_message(self):
         assert self.is_element_present(*ProductPageLocators.BASKET_INFO_MSG), \
             "Basket price info message is not present"
 

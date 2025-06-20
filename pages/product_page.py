@@ -13,20 +13,24 @@ class ProductPage(BasePage):
         self.is_basket_price_correct()
 
     def click_add_to_basket_button(self):
-        assert self.click_on_button(*ProductPageLocators.ADD_TO_BASKET_BTN), \
-            "Add to basket button is not present"
+        assert self.click_on_button(
+            *ProductPageLocators.ADD_TO_BASKET_BTN
+        ), "Add to basket button is not present"
 
     def should_be_success_message(self):
-        assert self.is_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
-            "Success message is not present"
+        assert self.is_element_present(
+            *ProductPageLocators.SUCCESS_MESSAGE
+        ), "Success message is not present"
 
     def should_not_be_success_message(self):
-        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
-            "Success message is presented, but should not be"
+        assert self.is_not_element_present(
+            *ProductPageLocators.SUCCESS_MESSAGE
+        ), "Success message is presented, but should not be"
 
     def is_success_message_disappeared(self):
-        assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), \
-            "Success message is not disappeared"
+        assert self.is_disappeared(
+            *ProductPageLocators.SUCCESS_MESSAGE
+        ), "Success message is not disappeared"
 
     def is_success_product_title_correct(self):
         product_title = self.browser.find_element(
@@ -39,8 +43,9 @@ class ProductPage(BasePage):
             "Success product title is not correct"
 
     def should_be_basket_price_message(self):
-        assert self.is_element_present(*ProductPageLocators.BASKET_PRICE_MESSAGE), \
-            "Basket price info message is not present"
+        assert self.is_element_present(
+            *ProductPageLocators.BASKET_PRICE_MESSAGE
+        ), "Basket price info message is not present"
 
     def is_basket_price_correct(self):
         product_price = self.browser.find_element(

@@ -65,6 +65,11 @@ pip install -r requirements.txt
 pytest
 ```
 
+## Запуск тестов для ревью
+```bash
+pytest -v --tb=line --language=en -m need_review
+```
+
 ### Запуск с выбором браузера
 ```bash
 # Chrome (по умолчанию)

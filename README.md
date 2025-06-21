@@ -117,7 +117,7 @@ pytest -v -s
 - `--language` - выбор языка интерфейса
 
 ### Поддерживаемые языки
-ar, ca, cs, da, de, en-gb, el, es, fi, fr, it, ko, nl, pl, pt, pt-br, ro, ru, sk, uk, zh-cn
+🇸🇦 (Arabic) | 🇨🇿 (Czech) | 🇩🇰 (Danish) | 🇩🇪 (German) | 🇬🇧 (English GB) | 🇬🇷 (Greek) | 🇪🇸 (Spanish) | 🇫🇮(Finnish) | 🇫🇷(French) | 🇮🇹(Italian) | 🇰🇷(Korean) | 🇳🇱(Dutch) | 🇵🇱(Polish) | 🇵🇹(Portuguese) | 🇧🇷(Portuguese BR) | 🇷🇴(Romanian) | 🇷🇺 ru (Russian) | 🇸🇰 sk (Slovak) | 🇺🇦 uk (Ukrainian) | 🇨🇳 zh-cn (Chinese)
 
 ## 🔍 Маркеры pytest
 

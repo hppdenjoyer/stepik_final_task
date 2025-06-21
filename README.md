@@ -116,9 +116,6 @@ pytest -v -s
 - `--browser_name` - выбор браузера (chrome/firefox)
 - `--language` - выбор языка интерфейса
 
-### Поддерживаемые языки
-🇸🇦 (Arabic) | 🇨🇿 (Czech) | 🇩🇰 (Danish) | 🇩🇪 (German) | 🇬🇧 (English GB) | 🇬🇷 (Greek) | 🇪🇸 (Spanish) | 🇫🇮(Finnish) | 🇫🇷(French) | 🇮🇹(Italian) | 🇰🇷(Korean) | 🇳🇱(Dutch) | 🇵🇱(Polish) | 🇵🇹(Portuguese) | 🇧🇷(Portuguese BR) | 🇷🇴(Romanian) | 🇷🇺 ru (Russian) | 🇸🇰 sk (Slovak) | 🇺🇦 uk (Ukrainian) | 🇨🇳 zh-cn (Chinese)
-
 ## 🔍 Маркеры pytest
 
 - `@pytest.mark.login_guest` - тесты входа для гостей
